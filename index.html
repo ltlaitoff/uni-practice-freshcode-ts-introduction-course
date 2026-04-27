@@ -1,13 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>uni-practice-freshcode-ts-introduction-course</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>uni-practice-freshcode-ts-introduction-course</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <form id="form">
+                <label>
+                    <span>Name:</span>
+                    <input type="text" name="name" value="Іван" />
+                </label>
+
+                <label>
+                    <span>Age:</span>
+                    <input type="number" name="age" value="21" />
+                </label>
+
+                <label>
+                    <span>Hobby:</span>
+                    <input type="text" name="hobby" value="Фотографія" />
+                </label>
+
+                <label>
+                    <span>Hobby years:</span>
+                    <input type="number" name="hobby-years" value="1" />
+                </label>
+
+                <label>
+                    <select id="form-colors" name="colors"></select>
+                </label>
+
+                <button>Start</button>
+            </form>
+
+            <div id="user-output"></div>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>
